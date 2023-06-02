@@ -2,7 +2,6 @@ import streamlit as st
 from article_searcher import ArticleSearcher
 from article_getter import ArticleGetter
 from article_analizer import ArticleAnalizer
-from ontology_creator import OntologyCreator
 from owlready2 import *
 import os
 import PyPDF2
@@ -12,11 +11,11 @@ import zlib
 
 logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w")
 
-if not os.path.exists("ontology.owl"):
-    with open("ontology.owl", 'w') as fp:
+if not os.path.exists("geneOntology.owl"):
+    with open("geneOntology.owl", 'w') as fp:
         pass
 
-onto = get_ontology("file://ontology.owl").load()
+onto = get_ontology("file://geneOntology.owl").load()
 
 with onto:
     class Gene(Thing):
