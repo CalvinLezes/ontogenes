@@ -2,6 +2,7 @@ import nltk
 from nltk.corpus import stopwords
 import logging
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
 
 class ArticleAnalizer:
