@@ -8,9 +8,11 @@ def install(package):
     else:
         pip._internal.main(['install', package])
 
-install('owlready2')
-install('nltk')
-install('PyPDF2')
+
+if __name__ == "__main__":
+    install('owlready2')
+    install('nltk')
+    install('PyPDF2')
 from owlready2 import *
 import os
 import PyPDF2
