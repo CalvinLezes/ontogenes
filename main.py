@@ -9,6 +9,7 @@ def install(package):
         pip._internal.main(['install', package])
 
 install('owlready2')
+install('nltk')
 from owlready2 import *
 import os
 import PyPDF2
