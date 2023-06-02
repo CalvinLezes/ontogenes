@@ -290,3 +290,9 @@ result = st.button('Start the analysis')
 
 if result:
     start_anilise()
+    with open('ontology.owl') as file:
+        btn = st.download_button(
+            label="Download ontology",
+            data=file,
+            file_name="ontology.owl",
+          )

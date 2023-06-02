@@ -1,0 +1,785 @@
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&usehistory=y&term=anxiety+disorder+AND+Genetics+AND++ffrft[Filter]+humans[Filter]
+INFO:root:Total number of articles found is 3895
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=MCID_647a09c06c491c61496f4710&retstart=0&retmax=20&retmode=xml
+INFO:root:article with id 37094658 doesnt have a full text in pmc
+INFO:root:article with id 37060872 doesnt have a full text in pmc
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10218654
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&usehistory=y&term=anxiety+disorder+AND+Genetics+AND+Chinese+ffrft[Filter]+humans[Filter]
+INFO:root:Total number of articles found is 82
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=MCID_647a0a695cc9bb27322a3a47&retstart=0&retmax=20&retmode=xml
+INFO:root:article with id 36472110 doesnt have a full text in pmc
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10097067
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&usehistory=y&term=anxiety+disorder+AND+Genetics+AND+Canadian+ffrft[Filter]+humans[Filter]
+INFO:root:Total number of articles found is 49
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=MCID_647a0ba6fb2f174ca71e1976&retstart=0&retmax=20&retmode=xml
+INFO:root:article with id 33031715 doesnt have a full text in pmc
+INFO:root:article with id 32485484 doesnt have a full text in pmc
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10182097
+INFO:root:File PMC10182097 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/98/ea/PMC10182097.tar.gz
+INFO:root:created file for PMC10182097.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC10182097.tar.gz
+INFO:root:file PMC10182097.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC10182097.tar.gz
+INFO:root:start going through archive PMC10182097.tar.gz
+INFO:root:found pdf file tgz archive PMC10182097/41398_2023_Article_2453.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene (ORGANIZATION CADM2/NNP)
+INFO:root:found gene (ORGANIZATION TCF4/NNP)
+INFO:root:found gene (ORGANIZATION DRD2/NNP)
+INFO:root:found gene (ORGANIZATION MDM1/NNP)
+INFO:root:found gene (ORGANIZATION XKR6/NNP)
+INFO:root:found gene (ORGANIZATION TMEM161B/NNP)
+INFO:root:found gene (ORGANIZATION SGK223/NNP)
+INFO:root:found gene (ORGANIZATION CACNA2D1/NNP)
+INFO:root:found gene (ORGANIZATION CYLD/NNP)
+INFO:root:found gene (ORGANIZATION TBX21/NNP)
+INFO:root:found gene (ORGANIZATION SPHKAP/NNP)
+INFO:root:found gene (ORGANIZATION ZNF229/NNP)
+INFO:root:found gene (ORGANIZATION ELOVL7/NNP)
+INFO:root:found gene (ORGANIZATION PTPRF/NNP)
+INFO:root:found gene (ORGANIZATION CADPS2/NNP)
+INFO:root:found gene (ORGANIZATION NCAM1/NNP)
+INFO:root:found gene (GPE MAPT/NNP)
+INFO:root:found gene (ORGANIZATION KDM4A/NNP)
+INFO:root:found gene (ORGANIZATION PRL/NNP)
+INFO:root:found gene (ORGANIZATION MSN/NNP)
+INFO:root:found gene (ORGANIZATION HTR3B/NNP)
+INFO:root:found gene (ORGANIZATION CACNA1I/NNP)
+INFO:root:found gene (ORGANIZATION PGC/NNP)
+INFO:root:found gene (ORGANIZATION OPRM1/NNP Beyond/NNP)
+INFO:root:found gene (GPE HR/NNP)
+INFO:root:found gene (ORGANIZATION T/NNP)
+INFO:root:finished analisis
+INFO:root:deleted file PMC10182097.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9358944
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&usehistory=y&term=anxiety+disorder+AND+Genetics+AND+Canadian+ffrft[Filter]+humans[Filter]
+INFO:root:Total number of articles found is 49
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=MCID_647a0cd207654e508b493ef4&retstart=0&retmax=20&retmode=xml
+INFO:root:article with id 33031715 doesnt have a full text in pmc
+INFO:root:article with id 32485484 doesnt have a full text in pmc
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10182097
+INFO:root:File PMC10182097 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9358944
+INFO:root:File PMC9358944 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9796059
+INFO:root:File PMC9796059 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/69/6c/PMC9796059.tar.gz
+INFO:root:created file for PMC9796059.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC9796059.tar.gz
+INFO:root:file PMC9796059.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC9796059.tar.gz
+INFO:root:start going through archive PMC9796059.tar.gz
+INFO:root:found pdf file tgz archive PMC9796059/JCPP-63-1153.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC9796059.tar.gz
+INFO:root:didnt find any genes in file PMC9796059.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9440950
+INFO:root:File PMC9440950 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f1/a3/PMC9440950.tar.gz
+INFO:root:created file for PMC9440950.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC9440950.tar.gz
+INFO:root:file PMC9440950.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC9440950.tar.gz
+INFO:root:start going through archive PMC9440950.tar.gz
+INFO:root:found pdf file tgz archive PMC9440950/BDI-24-499.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene IMPACT
+INFO:root:found gene NHS
+INFO:root:found gene TG
+INFO:root:found gene CRK
+INFO:root:found gene T
+INFO:root:finished analisis
+INFO:root:deleted file PMC9440950.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7612512
+INFO:root:File PMC7612512 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7870035
+INFO:root:File PMC7870035 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7788468
+INFO:root:File PMC7788468 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/80/6a/PMC7788468.tar.gz
+INFO:root:created file for PMC7788468.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7788468.tar.gz
+INFO:root:file PMC7788468.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7788468.tar.gz
+INFO:root:start going through archive PMC7788468.tar.gz
+INFO:root:found pdf file tgz archive PMC7788468/jamanetwopen-e2030194-s001.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene GRN
+INFO:root:found gene MAPT
+INFO:root:found gene C9orf72
+INFO:root:finished analisis
+INFO:root:deleted file PMC7788468.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7918871
+INFO:root:File PMC7918871 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7450410
+INFO:root:File PMC7450410 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8986089
+INFO:root:File PMC8986089 has pdf link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/81/9d/nihms-1790988.PMC8986089.pdf
+INFO:root:created file for nihms-1790988.PMC8986089.pdf
+INFO:root:created ftp connection
+INFO:root:start download of file nihms-1790988.PMC8986089.pdf
+INFO:root:file nihms-1790988.PMC8986089.pdf was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file nihms-1790988.PMC8986089.pdf
+INFO:root:opening pdf file
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene BPI
+INFO:root:found gene CACNA1C
+INFO:root:found gene ANK3
+INFO:root:found gene MTHFR
+INFO:root:found gene TNF
+INFO:root:found gene CRP
+INFO:root:found gene HR
+INFO:root:found gene T
+INFO:root:found gene CHRNA7
+INFO:root:found gene STAR
+INFO:root:finished analisis
+INFO:root:deleted file nihms-1790988.PMC8986089.pdf
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7186226
+INFO:root:File PMC7186226 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/c9/92/PMC7186226.tar.gz
+INFO:root:created file for PMC7186226.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7186226.tar.gz
+INFO:root:file PMC7186226.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7186226.tar.gz
+INFO:root:start going through archive PMC7186226.tar.gz
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_Article_793.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene MAF
+INFO:root:found gene PGC
+INFO:root:found gene T
+INFO:root:found gene SRI
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM13_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM8_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM11_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM10_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM9_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM16_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM12_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM14_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM17_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM7_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM15_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM18_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM19_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC7186226.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6991244
+INFO:root:File PMC6991244 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6935147
+INFO:root:File PMC6935147 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/af/2e/PMC6935147.tar.gz
+INFO:root:created file for PMC6935147.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6935147.tar.gz
+INFO:root:file PMC6935147.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6935147.tar.gz
+INFO:root:start going through archive PMC6935147.tar.gz
+INFO:root:found pdf file tgz archive PMC6935147/12888_2019_Article_2410.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene STAR
+INFO:root:found gene CYP1A2
+INFO:root:found gene CYP2C9
+INFO:root:found gene CYP2C19
+INFO:root:found gene CYP3A4
+INFO:root:found gene CYP2B6
+INFO:root:found gene CYP2D6
+INFO:root:found gene HTR2A
+INFO:root:found gene MET
+INFO:root:finished analisis
+INFO:root:deleted file PMC6935147.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6783543
+INFO:root:File PMC6783543 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6492434
+INFO:root:File PMC6492434 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/80/b3/PMC6492434.tar.gz
+INFO:root:created file for PMC6492434.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6492434.tar.gz
+INFO:root:file PMC6492434.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6492434.tar.gz
+INFO:root:start going through archive PMC6492434.tar.gz
+INFO:root:found pdf file tgz archive PMC6492434/12884_2019_Article_2285.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene VIP
+INFO:root:found gene CYP2D6
+INFO:root:found gene T
+INFO:root:finished analisis
+INFO:root:deleted file PMC6492434.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6384243
+INFO:root:File PMC6384243 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/56/57/PMC6384243.tar.gz
+INFO:root:created file for PMC6384243.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6384243.tar.gz
+INFO:root:file PMC6384243.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6384243.tar.gz
+INFO:root:start going through archive PMC6384243.tar.gz
+INFO:root:found pdf file tgz archive PMC6384243/mmc1.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC6384243.tar.gz
+INFO:root:didnt find any genes in file PMC6384243.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7293886
+INFO:root:File PMC7293886 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC5875380
+INFO:root:File PMC5875380 has no links
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&usehistory=y&term=anxiety+disorder+AND+Genetics+AND+Canadian+ffrft[Filter]+humans[Filter]
+INFO:root:Total number of articles found is 49
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=MCID_647a1041e96f92782d19bbe6&retstart=0&retmax=20&retmode=xml
+INFO:root:article with id 33031715 doesnt have a full text in pmc
+INFO:root:article with id 32485484 doesnt have a full text in pmc
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10182097
+INFO:root:File PMC10182097 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/98/ea/PMC10182097.tar.gz
+INFO:root:created file for PMC10182097.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC10182097.tar.gz
+INFO:root:file PMC10182097.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC10182097.tar.gz
+INFO:root:start going through archive PMC10182097.tar.gz
+INFO:root:found pdf file tgz archive PMC10182097/41398_2023_Article_2453.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene CADM2
+INFO:root:found gene TCF4
+INFO:root:found gene DRD2
+INFO:root:found gene MDM1
+INFO:root:found gene XKR6
+INFO:root:found gene TMEM161B
+INFO:root:found gene SGK223
+INFO:root:found gene CACNA2D1
+INFO:root:found gene CYLD
+INFO:root:found gene TBX21
+INFO:root:found gene SPHKAP
+INFO:root:found gene ZNF229
+INFO:root:found gene ELOVL7
+INFO:root:found gene PTPRF
+INFO:root:found gene CADPS2
+INFO:root:found gene NCAM1
+INFO:root:found gene MAPT
+INFO:root:found gene KDM4A
+INFO:root:found gene PRL
+INFO:root:found gene MSN
+INFO:root:found gene HTR3B
+INFO:root:found gene CACNA1I
+INFO:root:found gene PGC
+INFO:root:found gene OPRM1
+INFO:root:found gene HR
+INFO:root:found gene T
+INFO:root:finished analisis
+INFO:root:deleted file PMC10182097.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9358944
+INFO:root:File PMC9358944 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9796059
+INFO:root:File PMC9796059 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/69/6c/PMC9796059.tar.gz
+INFO:root:created file for PMC9796059.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC9796059.tar.gz
+INFO:root:file PMC9796059.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC9796059.tar.gz
+INFO:root:start going through archive PMC9796059.tar.gz
+INFO:root:found pdf file tgz archive PMC9796059/JCPP-63-1153.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC9796059.tar.gz
+INFO:root:didnt find any genes in file PMC9796059.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9440950
+INFO:root:File PMC9440950 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7612512
+INFO:root:File PMC7612512 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f1/ad/PMC7612512.tar.gz
+INFO:root:created file for PMC7612512.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7612512.tar.gz
+INFO:root:file PMC7612512.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7612512.tar.gz
+INFO:root:start going through archive PMC7612512.tar.gz
+INFO:root:found pdf file tgz archive PMC7612512/EMS132537.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene NHS
+INFO:root:found gene CINP
+INFO:root:finished analisis
+INFO:root:deleted file PMC7612512.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7870035
+INFO:root:File PMC7870035 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7788468
+INFO:root:File PMC7788468 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7918871
+INFO:root:File PMC7918871 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7450410
+INFO:root:File PMC7450410 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8986089
+INFO:root:File PMC8986089 has pdf link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/81/9d/nihms-1790988.PMC8986089.pdf
+INFO:root:created file for nihms-1790988.PMC8986089.pdf
+INFO:root:created ftp connection
+INFO:root:start download of file nihms-1790988.PMC8986089.pdf
+INFO:root:file nihms-1790988.PMC8986089.pdf was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file nihms-1790988.PMC8986089.pdf
+INFO:root:opening pdf file
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene BPI
+INFO:root:found gene CACNA1C
+INFO:root:found gene ANK3
+INFO:root:found gene MTHFR
+INFO:root:found gene TNF
+INFO:root:found gene CRP
+INFO:root:found gene HR
+INFO:root:found gene T
+INFO:root:found gene CHRNA7
+INFO:root:found gene STAR
+INFO:root:finished analisis
+INFO:root:deleted file nihms-1790988.PMC8986089.pdf
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7186226
+INFO:root:File PMC7186226 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/c9/92/PMC7186226.tar.gz
+INFO:root:created file for PMC7186226.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7186226.tar.gz
+INFO:root:file PMC7186226.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7186226.tar.gz
+INFO:root:start going through archive PMC7186226.tar.gz
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_Article_793.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene MAF
+INFO:root:found gene PGC
+INFO:root:found gene T
+INFO:root:found gene SRI
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM13_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM8_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM11_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM10_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM9_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM16_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM12_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM14_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM17_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM7_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM15_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM18_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM19_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC7186226.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6991244
+INFO:root:File PMC6991244 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6935147
+INFO:root:File PMC6935147 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/af/2e/PMC6935147.tar.gz
+INFO:root:created file for PMC6935147.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6935147.tar.gz
+INFO:root:file PMC6935147.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6935147.tar.gz
+INFO:root:start going through archive PMC6935147.tar.gz
+INFO:root:found pdf file tgz archive PMC6935147/12888_2019_Article_2410.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene STAR
+INFO:root:found gene CYP1A2
+INFO:root:found gene CYP2C9
+INFO:root:found gene CYP2C19
+INFO:root:found gene CYP3A4
+INFO:root:found gene CYP2B6
+INFO:root:found gene CYP2D6
+INFO:root:found gene HTR2A
+INFO:root:found gene MET
+INFO:root:finished analisis
+INFO:root:deleted file PMC6935147.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6783543
+INFO:root:File PMC6783543 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/25/18/PMC6783543.tar.gz
+INFO:root:created file for PMC6783543.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6783543.tar.gz
+INFO:root:file PMC6783543.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6783543.tar.gz
+INFO:root:start going through archive PMC6783543.tar.gz
+INFO:root:found pdf file tgz archive PMC6783543/41398_2019_Article_589.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene CHN2
+INFO:root:found gene JAK2
+INFO:root:found gene CRP
+INFO:root:found gene STAR
+INFO:root:finished analisis
+INFO:root:deleted file PMC6783543.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6492434
+INFO:root:File PMC6492434 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/80/b3/PMC6492434.tar.gz
+INFO:root:created file for PMC6492434.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6492434.tar.gz
+INFO:root:file PMC6492434.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6492434.tar.gz
+INFO:root:start going through archive PMC6492434.tar.gz
+INFO:root:found pdf file tgz archive PMC6492434/12884_2019_Article_2285.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene VIP
+INFO:root:found gene CYP2D6
+INFO:root:found gene T
+INFO:root:finished analisis
+INFO:root:deleted file PMC6492434.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6384243
+INFO:root:File PMC6384243 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/56/57/PMC6384243.tar.gz
+INFO:root:created file for PMC6384243.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6384243.tar.gz
+INFO:root:file PMC6384243.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6384243.tar.gz
+INFO:root:start going through archive PMC6384243.tar.gz
+INFO:root:found pdf file tgz archive PMC6384243/mmc1.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC6384243.tar.gz
+INFO:root:didnt find any genes in file PMC6384243.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7293886
+INFO:root:File PMC7293886 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC5875380
+INFO:root:File PMC5875380 has no links
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&usehistory=y&term=anxiety+disorder+AND+Genetics+AND+Canadian+ffrft[Filter]+humans[Filter]
+INFO:root:Total number of articles found is 49
+INFO:root:Made request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&query_key=1&WebEnv=MCID_647a13201b540a14e823d8a2&retstart=0&retmax=20&retmode=xml
+INFO:root:article with id 33031715 doesnt have a full text in pmc
+INFO:root:article with id 32485484 doesnt have a full text in pmc
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10182097
+INFO:root:File PMC10182097 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/98/ea/PMC10182097.tar.gz
+INFO:root:created file for PMC10182097.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC10182097.tar.gz
+INFO:root:file PMC10182097.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC10182097.tar.gz
+INFO:root:start going through archive PMC10182097.tar.gz
+INFO:root:found pdf file tgz archive PMC10182097/41398_2023_Article_2453.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene CADM2
+INFO:root:found gene TCF4
+INFO:root:found gene DRD2
+INFO:root:found gene MDM1
+INFO:root:found gene XKR6
+INFO:root:found gene TMEM161B
+INFO:root:found gene SGK223
+INFO:root:found gene CACNA2D1
+INFO:root:found gene CYLD
+INFO:root:found gene TBX21
+INFO:root:found gene SPHKAP
+INFO:root:found gene ZNF229
+INFO:root:found gene ELOVL7
+INFO:root:found gene PTPRF
+INFO:root:found gene CADPS2
+INFO:root:found gene NCAM1
+INFO:root:found gene MAPT
+INFO:root:found gene KDM4A
+INFO:root:found gene PRL
+INFO:root:found gene MSN
+INFO:root:found gene HTR3B
+INFO:root:found gene CACNA1I
+INFO:root:found gene PGC
+INFO:root:found gene OPRM1
+INFO:root:found gene HR
+INFO:root:found gene T
+INFO:root:finished analisis
+INFO:root:deleted file PMC10182097.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9358944
+INFO:root:File PMC9358944 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9796059
+INFO:root:File PMC9796059 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/69/6c/PMC9796059.tar.gz
+INFO:root:created file for PMC9796059.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC9796059.tar.gz
+INFO:root:file PMC9796059.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC9796059.tar.gz
+INFO:root:start going through archive PMC9796059.tar.gz
+INFO:root:found pdf file tgz archive PMC9796059/JCPP-63-1153.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC9796059.tar.gz
+INFO:root:didnt find any genes in file PMC9796059.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9440950
+INFO:root:File PMC9440950 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7612512
+INFO:root:File PMC7612512 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f1/ad/PMC7612512.tar.gz
+INFO:root:created file for PMC7612512.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7612512.tar.gz
+INFO:root:file PMC7612512.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7612512.tar.gz
+INFO:root:start going through archive PMC7612512.tar.gz
+INFO:root:found pdf file tgz archive PMC7612512/EMS132537.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene NHS
+INFO:root:found gene CINP
+INFO:root:finished analisis
+INFO:root:deleted file PMC7612512.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7870035
+INFO:root:File PMC7870035 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f0/b4/PMC7870035.tar.gz
+INFO:root:created file for PMC7870035.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7870035.tar.gz
+INFO:root:file PMC7870035.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7870035.tar.gz
+INFO:root:start going through archive PMC7870035.tar.gz
+INFO:root:found pdf file tgz archive PMC7870035/41398_2020_Article_1121.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene PTPRD
+INFO:root:found gene DLGAP1
+INFO:root:found gene BTBD3
+INFO:root:found gene GRID2
+INFO:root:found gene MAF
+INFO:root:found gene SH3GL2
+INFO:root:found gene RRN3
+INFO:root:found gene PDXDC1
+INFO:root:found gene MEF2BNB
+INFO:root:found gene PGC
+INFO:root:found gene SLC1A1
+INFO:root:found gene SLITRK1
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7870035/41398_2020_1121_MOESM1_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene MAF
+INFO:root:found gene PGC
+INFO:root:found gene PDXDC1
+INFO:root:found gene PTPRD
+INFO:root:found gene SH3GL2
+INFO:root:found gene TMEM45B
+INFO:root:found gene NPAS2
+INFO:root:found gene GRID2
+INFO:root:found gene CLDN14
+INFO:root:found gene PPM1H
+INFO:root:found gene HHAT
+INFO:root:found gene NEK11
+INFO:root:found gene MUC22
+INFO:root:found gene SGMS2
+INFO:root:finished analisis
+INFO:root:deleted file PMC7870035.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7788468
+INFO:root:File PMC7788468 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7918871
+INFO:root:File PMC7918871 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7450410
+INFO:root:File PMC7450410 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8986089
+INFO:root:File PMC8986089 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7186226
+INFO:root:File PMC7186226 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/c9/92/PMC7186226.tar.gz
+INFO:root:created file for PMC7186226.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC7186226.tar.gz
+INFO:root:file PMC7186226.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC7186226.tar.gz
+INFO:root:start going through archive PMC7186226.tar.gz
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_Article_793.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene MAF
+INFO:root:found gene PGC
+INFO:root:found gene T
+INFO:root:found gene SRI
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM13_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM8_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM11_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM10_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM9_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM16_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM12_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM14_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM17_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM7_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM15_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM18_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:found pdf file tgz archive PMC7186226/41398_2020_793_MOESM19_ESM.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC7186226.tar.gz
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6991244
+INFO:root:File PMC6991244 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f5/bf/PMC6991244.tar.gz
+INFO:root:created file for PMC6991244.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6991244.tar.gz
+INFO:root:file PMC6991244.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6991244.tar.gz
+INFO:root:start going through archive PMC6991244.tar.gz
+INFO:root:found pdf file tgz archive PMC6991244/jamanetwopen-3-e1918377-s001.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:found gene UBC
+INFO:root:found gene MCU
+INFO:root:found gene T
+INFO:root:finished analisis
+INFO:root:deleted file PMC6991244.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6935147
+INFO:root:File PMC6935147 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6783543
+INFO:root:File PMC6783543 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6492434
+INFO:root:File PMC6492434 has no links
+INFO:root:Made request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6384243
+INFO:root:File PMC6384243 has tgz link ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/56/57/PMC6384243.tar.gz
+INFO:root:created file for PMC6384243.tar.gz
+INFO:root:created ftp connection
+INFO:root:start download of file PMC6384243.tar.gz
+INFO:root:file PMC6384243.tar.gz was downloaded
+INFO:root:closed ftp connection
+INFO:root:closed file PMC6384243.tar.gz
+INFO:root:start going through archive PMC6384243.tar.gz
+INFO:root:found pdf file tgz archive PMC6384243/mmc1.pdf
+INFO:root:turning pdf in str
+INFO:root:preprocessed article
+INFO:root:finished analisis
+INFO:root:deleted file PMC6384243.tar.gz
+INFO:root:didnt find any genes in file PMC6384243.tar.gz
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC7293886
+INFO:root:File PMC7293886 has no links
+WARNING:root:Failed to make request to https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC5875380
+INFO:root:File PMC5875380 has no links
