@@ -1,6 +1,7 @@
 import nltk
 from nltk.corpus import stopwords
 import logging
+nltk.download('punkt')
 nltk.download('stopwords')
 
 class ArticleAnalizer:
