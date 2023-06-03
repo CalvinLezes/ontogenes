@@ -8,7 +8,7 @@ import zlib
 from article_searcher import ArticleSearcher
 from article_getter import ArticleGetter
 from article_analizer import ArticleAnalizer
-
+from owlconventer import convert_owl_to_csv
 logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w")
 
 if not os.path.exists("ontology.owl"):
@@ -324,3 +324,10 @@ if result:
             data=file,
             file_name="ontology.owl",
           )
+    convert_owl_to_csv()
+    with open('ontology.csv') as csv_file:
+        csv_btn = st.download_button(
+            label='Download csv',
+            data = csv_file,
+            file_name='ontology.csv',
+        )
