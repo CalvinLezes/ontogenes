@@ -54,7 +54,10 @@ class ArticleGetter:
         logging.info('created ftp connection')
 
         logging.info(f'start download of file {file_name}')
-        ftp.retrbinary('RETR ' + file_name, my_file.write, 33554432) # Введите имя файла для загрузки  
+        try:
+            ftp.retrbinary('RETR ' + file_name, my_file.write, 33554432) # Введите имя файла для загрузки  
+        except:
+            logging.warning(f'failed to download file {file_name}')
         logging.info(f'file {file_name} was downloaded')
 
         ftp.quit() # Завершить FTP-соединение  
