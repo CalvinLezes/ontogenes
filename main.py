@@ -1,5 +1,16 @@
 import streamlit as st
 import os
+import pip
+
+def install(package):
+    if hasattr(pip, 'main'):
+        pip.main(['install', package])
+    else:
+        pip._internal.main(['install', package])
+
+install('owlready2')
+install('nltk')
+install('PyPDF2')
 from ontology_creator import OntologyCreator
 from owlconventer import convert_owl_to_csv
 
