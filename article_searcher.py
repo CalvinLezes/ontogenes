@@ -4,12 +4,13 @@ import xml.etree.ElementTree as ET
 
 class ArticleSearcher:
 
-    def __init__(self, disorder, number_of_articles, age_filter, gender_filter, nationality) -> None:
+    def __init__(self, disorder, number_of_articles, age_filter, gender_filter, nationality, year_filter) -> None:
         self.disorder = disorder
         self.number_of_articles = number_of_articles
         self.age_filter = age_filter
         self.gender_filter = gender_filter
         self.nationality = nationality
+        self.year_filter = year_filter
         logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w")
 
     def make_request(self, link):
@@ -30,6 +31,7 @@ class ArticleSearcher:
             search_term = '+'.join([search_term, self.age_filter])
         if self.gender_filter is not None:
             search_term = '+'.join([search_term, self.gender_filter])
+        search_term = '+'.join([search_term, self.year_filter])
         search_link = '&'.join([base_link, search_term])
         return search_link
 

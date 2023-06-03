@@ -187,6 +187,8 @@ nationality = st.text_input('Put a nationality here', '')
 
 count = st.number_input('Choose a number of articles to analise', 1, value= 10)
 
+years = st.selectbox('Choose years', ['2019:2023', '2020:2023', '2021:2023', '2022:2023', '2023:2023'])
+
 gene_descriptions, gene_names = get_genes()
 
 genes_onto = []
@@ -204,7 +206,8 @@ def start_anilise():
     disorder_search_term = disorder.replace(' ', '+')
     gender_filter = create_gender_filter(gender)
     age_filter = create_age_filter(received_ages)
-    article_searcher = ArticleSearcher(disorder_search_term, count, age_filter, gender_filter, nationality)
+    year_filter = f'&{years}[Publication Date]'
+    article_searcher = ArticleSearcher(disorder_search_term, count, age_filter, gender_filter, nationality, year_filter)
     articles = article_searcher.search_articles()
 
     if len(articles) == 0:
