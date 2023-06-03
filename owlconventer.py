@@ -107,14 +107,12 @@ def convert_owl_to_csv():
                         person = onto.search_one(is_a = value)
                         for person_prop in person.get_properties():
                             for value in person_prop[person]:
-                                if person_prop.python_name == 'has_age':
-                                    parametrs.append(onto.search_one(is_a = value).name) 
-                                if person_prop.python_name == 'has_nationality':
-                                    parametrs.append(onto.search_one(is_a = value).name) 
+                                if person_prop.python_name == 'has_age' or person_prop.python_name == 'has_nationality' or person_prop.python_name == 'has_gender':
+                                    name = onto.search_one(is_a = value).name
+                                    if parametrs not in parametrs:
+                                        parametrs.append(name) 
                                 if person_prop.python_name == 'has_disorder':
                                     disorder = onto.search_one(is_a = value).name 
-                                if person_prop.python_name == 'has_gender':
-                                    parametrs.append(onto.search_one(is_a = value).name) 
                                 if person_prop.python_name == 'is_affected_by':
                                     gene = onto.search_one(is_a = value)
                                     gene_name = gene.name
