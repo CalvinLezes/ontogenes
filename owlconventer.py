@@ -82,6 +82,7 @@ def convert_owl_to_csv():
     individuals = onto.search(type = Article)
     article_id = None
     article_title = None
+    disorder = None
     journal = None
     date = None
     authors = []
@@ -110,6 +111,8 @@ def convert_owl_to_csv():
                                     parametrs.append(onto.search_one(is_a = value).name) 
                                 if person_prop.python_name == 'has_nationality':
                                     parametrs.append(onto.search_one(is_a = value).name) 
+                                if person_prop.python_name == 'has_disorder':
+                                    disorder = onto.search_one(is_a = value).name 
                                 if person_prop.python_name == 'has_gender':
                                     parametrs.append(onto.search_one(is_a = value).name) 
                                 if person_prop.python_name == 'is_affected_by':
@@ -118,11 +121,12 @@ def convert_owl_to_csv():
                                     gene_description = gene.comment[0]
                                     genes.append((gene_name, gene_description))
             for gene in genes:
-                file_writer.writerow([id, article_id, article_title, gene[0], gene[1],', '.join(parametrs), journal, date, ', '.join(authors)])
+                file_writer.writerow([id, article_id, article_title, gene[0], gene[1], disorder, ', '.join(parametrs), journal, date, ', '.join(authors)])
                 id = id+1
             article_id = None
             article_title = None
             journal = None
+            disorder = None
             date = None
             authors = []
             genes =[]
