@@ -288,6 +288,7 @@ def start_anilise():
             article_onto = Article(article[0])
             article_onto.comment = article[2]
             if article[4] is not None:
+                logging.info(f'adding publication date {article[4]} to article {article[0]}')
                 article_onto.has_publication_date.append(article[4])
             for author in article[1]:
                 author_onto = Author(author)
