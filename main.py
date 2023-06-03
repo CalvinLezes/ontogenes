@@ -248,12 +248,18 @@ def start_anilise():
     for article in articles:
         format, file_name = article_getter.get_article(article[0])
         found_genes = []
+        logging.info(article)
         if format == 'pdf':
             logging.info('opening pdf file')
-            with open(file_name,'rb') as pdf_file:
-                pdf_file = pdf_to_str(pdf_file)
-                genes = article_analiser.analise_article(pdf_file, gene_names)
-                found_genes.extend(genes)
+            try:
+                with open(file_name,'rb') as pdf_file:
+                    pdf_file = pdf_to_str(pdf_file)
+                    genes = article_analiser.analise_article(pdf_file, gene_names)
+                    found_genes.extend(genes)
+            except:
+                logging.warning(f'exception while reading file {file_name}')
+                os.remove(file_name)
+                continue  
         if format == 'tgz':
             logging.info(f'start going through archive {file_name}')
             try:
@@ -266,7 +272,7 @@ def start_anilise():
                             genes = article_analiser.analise_article(pdf_file, gene_names)
                             found_genes.extend(genes)    
             except zlib.error:
-                logging.warn(f'exception while decomoressing data from file {file_name}')
+                logging.warning(f'exception while decomoressing data from file {file_name}')
                 os.remove(file_name)
                 continue  
         if format is None:

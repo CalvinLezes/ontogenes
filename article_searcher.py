@@ -62,7 +62,7 @@ class ArticleSearcher:
                         authors.append(name)
                 title = article.find('MedlineCitation/Article/ArticleTitle').text
                 journal_title = article.find('MedlineCitation/Article/Journal/Title').text.replace(' ', '_')
-                ArticleDate = article.find('MedlineCitation/Article/ArticleDate')
+                ArticleDate = article.find('MedlineCitation/DateCompleted')
                 if ArticleDate is None:
                     date = None
                 else:
