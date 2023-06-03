@@ -228,7 +228,7 @@ class OntologyCreator:
                 if age == age_option[1]:                
                     age_onto = Age(age_option[0])   
                     age_onto.comment = age_option[1]
-                ages_onto.append(age_onto)    
+                    ages_onto.append(age_onto)    
                 
         article_getter = ArticleGetter()
         article_analiser = ArticleAnalizer()
@@ -382,7 +382,7 @@ class OntologyCreator:
                 if age == age_option[1]:                
                     age_onto = Age(age_option[0])   
                     age_onto.comment = age_option[1]
-                ages_onto.append(age_onto)    
+                    ages_onto.append(age_onto)    
                 
         article_getter = ArticleGetter()
         article_analiser = ArticleAnalizer()
