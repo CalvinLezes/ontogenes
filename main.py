@@ -206,7 +206,7 @@ def start_anilise():
     disorder_search_term = disorder.replace(' ', '+')
     gender_filter = create_gender_filter(gender)
     age_filter = create_age_filter(received_ages)
-    year_filter = f'&{years}[Publication Date]'
+    year_filter = f'{years}[Publication Date]'
     article_searcher = ArticleSearcher(disorder_search_term, count, age_filter, gender_filter, nationality, year_filter)
     articles = article_searcher.search_articles()
 
