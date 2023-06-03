@@ -1,84 +1,79 @@
-
-
 from owlready2 import *
 import csv
 
-filename = 'ontology.owl'
 
-onto = get_ontology(f"file://{filename}").load()
+def convert_owl_to_csv(ontology_name):
+    onto = get_ontology(f"file://{ontology_name}.owl").load()
 
-with onto:
-    class Gene(Thing):
-        pass
+    with onto:
+        class Gene(Thing):
+            pass
 
-    class MentalDisorder(Thing):
-        pass
+        class MentalDisorder(Thing):
+            pass
 
-    class Person(Thing):
-        pass
+        class Person(Thing):
+            pass
 
-    class Characteristic(Thing):
-        pass
+        class Characteristic(Thing):
+            pass
 
-    class Nationality(Characteristic):
-        pass
+        class Nationality(Characteristic):
+            pass
 
-    class Age(Characteristic):
-        pass
+        class Age(Characteristic):
+            pass
 
-    class Gender(Characteristic):
-        pass
+        class Gender(Characteristic):
+            pass
 
-    class Article(Thing):
-        pass
+        class Article(Thing):
+            pass
 
-    class Author(Thing):
-        pass
+        class Journal(Thing):
+            pass
 
-    class has_disorder(Person >> MentalDisorder):
-        pass
+        class Author(Thing):
+            pass
 
-    class is_disorder_of(MentalDisorder >> Person):
-        inverse_property = has_disorder
+        class has_disorder(Person >> MentalDisorder):
+            pass
 
-    class has_nationality(Person >> Nationality):
-        pass
+        class is_disorder_of(MentalDisorder >> Person):
+            inverse_property = has_disorder
 
-    class is_nationality_of(Nationality >> Person):
-        inverse_property = has_nationality
+        class has_characteristic(Person >> Characteristic):
+            pass
 
-    class has_age(Person >> Age):
-        pass
+        class is_characteristic_of(Characteristic >> Person):
+            inverse_property = has_characteristic
 
-    class is_age_of(Age >> Person):
-        inverse_property = has_age
+        class has_effect_on(Gene >> Person):
+            pass
 
-    class has_gender(Person >> Gender):
-        pass
+        class is_affected_by(Person >> Gene):
+            inverse_property = has_effect_on
 
-    class is_gender_of(Gender >> Person):
-        inverse_property = has_gender
+        class from_article(Person >> Article):
+            pass
 
-    class has_effect_on(Gene >> Person):
-        pass
+        class describes_person(Article >> Person):
+            inverse_property = from_article
 
-    class is_affected_by(Person >> Gene):
-        inverse_property = has_effect_on
+        class has_author(Article >> Author):
+            pass
 
-    class from_article(Person >> Article):
-        pass
+        class is_author_of(Author >> Article):
+            inverse_property = has_author
 
-    class describes_person(Article >> Person):
-        inverse_property = from_article
+        class published_in(Article >> Journal):
+            pass
 
-    class has_author(Article >> Author):
-        pass
+        class published(Journal >> Article):
+            inverse_property = published_in
 
-    class is_author_of(Author >> Article):
-        inverse_property = has_author
-
-
-def convert_owl_to_csv():
+        class has_publication_date(Article >> str):
+            pass
     individuals = onto.search(type = Article)
     article_id = None
     article_title = None
@@ -89,7 +84,7 @@ def convert_owl_to_csv():
     genes =[]
     parametrs = []
     id = 1
-    with open("ontology.csv", mode="w", encoding='utf-8') as w_file:
+    with open(f"{ontology_name}.csv", mode="w", encoding='utf-8') as w_file:
         file_writer = csv.writer(w_file, delimiter = ";")
         for individual in individuals:
             article_id = individual.name
@@ -107,9 +102,9 @@ def convert_owl_to_csv():
                         person = onto.search_one(is_a = value)
                         for person_prop in person.get_properties():
                             for value in person_prop[person]:
-                                if person_prop.python_name == 'has_age' or person_prop.python_name == 'has_nationality' or person_prop.python_name == 'has_gender':
+                                if person_prop.python_name == 'has_characteristic':
                                     name = onto.search_one(is_a = value).name
-                                    if parametrs not in parametrs:
+                                    if name not in parametrs:
                                         parametrs.append(name) 
                                 if person_prop.python_name == 'has_disorder':
                                     disorder = onto.search_one(is_a = value).name 
