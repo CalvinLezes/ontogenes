@@ -203,13 +203,15 @@ years = st.selectbox('Choose years', ['2019:2023', '2020:2023', '2021:2023', '20
 
 gene_descriptions, gene_names = get_genes()
 
-genes_onto = []
 
-for gene in gene_descriptions:
-    new_gene = Gene(gene[0])
-    new_gene.comment = gene[1]
-    genes_onto.append(new_gene)
 
+def add_genes():
+    genes_onto = []
+    for gene in gene_descriptions:
+        new_gene = Gene(gene[0])
+        new_gene.comment = gene[1]
+        genes_onto.append(new_gene)
+    return genes_onto
 
 def start_anilise():
     if disorder == '':
@@ -227,6 +229,8 @@ def start_anilise():
         return
     
     st.write(f"Found {len(articles)} articles")
+
+    genes_onto = add_genes()
 
     disorder_onto = find_individual(MentalDisorder, disorder)
     if disorder_onto is None:
