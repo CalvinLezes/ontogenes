@@ -7,8 +7,8 @@ import logging
 import zlib
 from article_searcher import ArticleSearcher
 from article_getter import ArticleGetter
-from article_analizer import ArticleAnalizer
 from owlconventer import convert_owl_to_csv
+from article_analizer import ArticleAnalizer
 logging.basicConfig(level=logging.INFO, filename="py_log.log", filemode="w")
 
 if not os.path.exists("ontology.owl"):
@@ -199,8 +199,10 @@ nationality = st.text_input('Put a nationality here', '')
 
 count = st.number_input('Choose a number of articles to analise', 1, value= 10)
 
-years = st.selectbox('Choose years', ['2019:2023', '2020:2023', '2021:2023', '2022:2023', '2023:2023'])
+#years = st.selectbox('Choose years', ['2019:2023', '2020:2023', '2021:2023', '2022:2023', '2023:2023'])
 
+start_year = st.selectbox('Choose start year', range(1923,2024), 95)
+end_year = st.selectbox('Choose end year', range(1923,2024), 100)
 gene_descriptions, gene_names = get_genes()
 
 
@@ -214,13 +216,16 @@ def add_genes():
     return genes_onto
 
 def start_anilise():
+    if start_year > end_year:
+        st.write('Start year must be less then end year')
+        return
     if disorder == '':
         st.write('You must put the name of disorder')
         return
     disorder_search_term = disorder.replace(' ', '_')
     gender_filter = create_gender_filter(gender)
     age_filter = create_age_filter(received_ages)
-    year_filter = f'{years}[Publication Date]'
+    year_filter = f'{start_year}:{end_year}[Publication Date]'
     article_searcher = ArticleSearcher(disorder_search_term, count, age_filter, gender_filter, nationality, year_filter)
     articles = article_searcher.search_articles()
 
