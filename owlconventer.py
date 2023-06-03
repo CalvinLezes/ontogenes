@@ -92,7 +92,8 @@ def convert_owl_to_csv():
         file_writer = csv.writer(w_file, delimiter = ";")
         for individual in individuals:
             article_id = individual.name
-            article_title = individual.comment[0]
+            if individual.comment is not None:
+                article_title = individual.comment[0]
             for prop in individual.get_properties():
                 for value in prop[individual]:
                     if prop.python_name == 'published_in':
