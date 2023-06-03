@@ -58,10 +58,19 @@ class ArticleSearcher:
                     forename = author.find('ForeName')
                     lastname = author.find('LastName')
                     if forename is not None:
-                        name = ' '.join([forename.text, lastname.text])
+                        name = '_'.join([forename.text.replace(' ', '_'), lastname.text.replace(' ', '_')])
                         authors.append(name)
                 title = article.find('MedlineCitation/Article/ArticleTitle').text
-                articles.append((pmc_id, authors, title))
+                journal_title = article.find('MedlineCitation/Article/Journal/Title').text.replace(' ', '_')
+                ArticleDate = article.find('MedlineCitation/Article/ArticleDate')
+                if ArticleDate is None:
+                    date = None
+                else:
+                    year = ArticleDate.find('Year').text
+                    month = ArticleDate.find('Month').text
+                    day = ArticleDate.find('Day').text
+                    date = '.'.join([year, month, day])
+                articles.append((pmc_id, authors, title, journal_title, date))
         return articles
     
     def search_articles(self):

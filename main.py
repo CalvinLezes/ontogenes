@@ -42,6 +42,9 @@ with onto:
     class Article(Thing):
         pass
 
+    class Journal(Thing):
+        pass
+
     class Author(Thing):
         pass
 
@@ -86,6 +89,15 @@ with onto:
 
     class is_author_of(Author >> Article):
         inverse_property = has_author
+
+    class published_in(Article >> Journal):
+        pass
+
+    class published(Journal >> Article):
+        inverse_property = published_in
+
+    class has_publication_date(Article >> str):
+        pass
 
 ages = [('allchild', 'Child (birth-18 years)'), ('newborn', 'Newborn (birth-1 month)'), ('allinfant', 'Infant (birth-23 months)'), ('infant', 'Infant: (1-23 months)'), 
                ('preschoolchild', 'Preschool Child (2-5 years)'), ('child', 'Child (6-12 years)'), ('adolescent', 'Adolescent (13-18 years)'), ('alladult', 'Adult (19+ years)'),
@@ -203,7 +215,7 @@ def start_anilise():
     if disorder == '':
         st.write('You must put the name of disorder')
         return
-    disorder_search_term = disorder.replace(' ', '+')
+    disorder_search_term = disorder.replace(' ', '_')
     gender_filter = create_gender_filter(gender)
     age_filter = create_age_filter(received_ages)
     year_filter = f'{years}[Publication Date]'
@@ -269,9 +281,15 @@ def start_anilise():
         if article_onto is None:
             article_onto = Article(article[0])
             article_onto.comment = article[2]
+            if article[4] is not None:
+                article_onto.has_publication_date.append(article[4])
             for author in article[1]:
                 author_onto = Author(author)
                 article_onto.has_author.append(author_onto)
+        journal_onto = find_individual(Journal, article[3])
+        if journal_onto is None:
+            journal_onto = Journal(article[3])
+        article_onto.published_in.append(journal_onto)
         person = find_individual(Person, 'person'+article[0])
         if person is None:
             person = Person('person'+article[0])
