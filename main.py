@@ -36,8 +36,11 @@ page = st.radio('Create new or expand existing ontology?', ['Create', 'Extend'])
 
 ontology_name = st.text_input('Choose a name for ontology', '')
 start_button = st.button('Start')
+
+finished = True
 if page == 'Create':
     if start_button:
+        finished = False
         if ontology_name == '':
             st.write('Ontology name cant be empty')
         elif os.path.exists(f'{ontology_name}.owl'):
@@ -50,23 +53,13 @@ if page == 'Create':
             st.write('Started creating ontology, please wait')
             ontology_creator = OntologyCreator(ontology_name, disorder, gender, received_ages, nationality, count, start_year, end_year)
             ontology_creator.create_ontology()
-            with open(f'{ontology_name}.owl') as file:
-                btn = st.download_button(
-                label="Download .owl",
-                data=file,
-                file_name=f'{ontology_name}.owl',
-            )
             convert_owl_to_csv(ontology_name)
-            with open(f'{ontology_name}.csv') as csv_file:
-                csv_btn = st.download_button(
-                label='Download .csv',
-                data = csv_file,
-                file_name=f'{ontology_name}.csv',
-            )
+            finished = True
+            st.write('Finished creating ontology, you can download the result')
 
 if page == 'Extend':
     if start_button:
-        
+        finished = False
         if ontology_name == '':
             st.write('Ontology name cant be empty')
         elif not os.path.exists(f'{ontology_name}.owl'):
@@ -76,24 +69,32 @@ if page == 'Extend':
         elif disorder == '':
             st.write('You must put the name of disorder')
         else:
-            st.write('Started creating ontology, please wait')
+            st.write('Started extending ontology, please wait')
             ontology_creator = OntologyCreator(ontology_name, disorder, gender, received_ages, nationality, count, start_year, end_year)
             ontology_creator.extend_ontology()
-            with open(f'{ontology_name}.owl') as file:
-                btn = st.download_button(
-                label="Download .owl",
-                data=file,
-                file_name=f'{ontology_name}.owl',
-            )
             convert_owl_to_csv(ontology_name)
-            with open(f'{ontology_name}.csv') as csv_file:
-                csv_btn = st.download_button(
-                label='Download .csv',
-                data = csv_file,
-                file_name=f'{ontology_name}.csv',
-            )
+            finished = True
+            st.write('Finished extending ontology, you can download the result')
+            
+download_button = st.button('Download ontology')
 
-if start_year > end_year:
-    st.write('Start year must be less then end year')
-if disorder == '':
-    st.write('You must put the name of disorder')
+if download_button:
+    if ontology_name == '':
+        st.write('Ontology name cant be empty')
+    elif not os.path.exists(f'{ontology_name}.owl'):
+        st.write('Ontology with this name doesnt exist')
+    elif not finished:
+        st.write('Wait until the end of creating ontology')
+    else:
+        with open(f'{ontology_name}.owl') as file:
+            btn = st.download_button(
+            label="Download .owl",
+            data=file,
+            file_name=f'{ontology_name}.owl',
+        )
+        with open(f'{ontology_name}.csv') as csv_file:
+            csv_btn = st.download_button(
+            label='Download .csv',
+            data = csv_file,
+            file_name=f'{ontology_name}.csv',
+        )
