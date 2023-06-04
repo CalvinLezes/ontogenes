@@ -36,7 +36,7 @@ page = st.radio('Create new or expand existing ontology?', ['Create', 'Extend'])
 
 ontology_name = st.text_input('Choose a name for ontology', '')
 start_button = st.button('Start')
-
+current_number_articles = 0
 finished = True
 if page == 'Create':
     if start_button:
@@ -51,8 +51,9 @@ if page == 'Create':
             st.write('You must put the name of disorder')
         else:
             st.write('Started creating ontology, please wait')
+            my_bar = st.progress(0.0, text='Analised 0 articles')
             ontology_creator = OntologyCreator(ontology_name, disorder, gender, received_ages, nationality, count, start_year, end_year)
-            total_number_of_articles, number_of_articles = ontology_creator.create_ontology()
+            total_number_of_articles, number_of_articles = ontology_creator.create_ontology(my_bar)
             st.write(f'Found {total_number_of_articles} articles with your search parametrs')
             st.write(f'Analized {number_of_articles} articles')
             convert_owl_to_csv(ontology_name)
@@ -72,8 +73,9 @@ if page == 'Extend':
             st.write('You must put the name of disorder')
         else:
             st.write('Started extending ontology, please wait')
+            my_bar = st.progress(0.0, text='Analised 0 articles')
             ontology_creator = OntologyCreator(ontology_name, disorder, gender, received_ages, nationality, count, start_year, end_year)
-            total_number_of_articles, number_of_articles = ontology_creator.extend_ontology()
+            total_number_of_articles, number_of_articles = ontology_creator.extend_ontology(my_bar)
             st.write(f'Found {total_number_of_articles} articles with your search parametrs')
             st.write(f'Analized {number_of_articles} articles')
             convert_owl_to_csv(ontology_name)

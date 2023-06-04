@@ -119,7 +119,7 @@ class OntologyCreator:
         logging.info(f'deleted file {file_name}')
         return found_genes
 
-    def create_ontology(self):
+    def create_ontology(self, my_bar):
         #create file for ontology
         with open(f"{self.ontology_name}.owl", 'w'):
             pass
@@ -235,9 +235,13 @@ class OntologyCreator:
         article_getter = ArticleGetter()
         article_analiser = ArticleAnalizer()
 
+        current_number_articles = 0
         #start downloading and analising articles
         for article in articles:
-
+            #update progress
+            current_number_articles = current_number_articles+1
+            my_bar.progress(current_number_articles/number_of_articles, text=f'Analised {current_number_articles} articles out of {number_of_articles}')
+            
             #article info
             article_id = article[0]
             article_authors = article[1]
@@ -284,7 +288,7 @@ class OntologyCreator:
         onto.save()
         return total_number_of_articles, number_of_articles
 
-    def extend_ontology(self):
+    def extend_ontology(self, my_bar):
         #open ontology
         onto = get_ontology(f"file://{self.ontology_name}.owl").load()
         with onto:
@@ -391,9 +395,15 @@ class OntologyCreator:
         article_getter = ArticleGetter()
         article_analiser = ArticleAnalizer()
 
+        current_number_articles = 0
+
         #start downloading and analising articles
         for article in articles:
-
+            
+            #update progress
+            current_number_articles = current_number_articles+1
+            my_bar.progress(current_number_articles/number_of_articles, text=f'Analised {current_number_articles} articles out of {number_of_articles}')
+            
             #article info
             article_id = article[0]
             article_authors = article[1]
