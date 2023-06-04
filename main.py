@@ -52,7 +52,8 @@ if page == 'Create':
         else:
             st.write('Started creating ontology, please wait')
             ontology_creator = OntologyCreator(ontology_name, disorder, gender, received_ages, nationality, count, start_year, end_year)
-            ontology_creator.create_ontology()
+            number_of_articles = ontology_creator.create_ontology()
+            st.write(f'Found {number_of_articles} articles with your search parametrs')
             convert_owl_to_csv(ontology_name)
             finished = True
             st.write('Finished creating ontology, you can download the result')
@@ -71,7 +72,8 @@ if page == 'Extend':
         else:
             st.write('Started extending ontology, please wait')
             ontology_creator = OntologyCreator(ontology_name, disorder, gender, received_ages, nationality, count, start_year, end_year)
-            ontology_creator.extend_ontology()
+            number_of_articles = ontology_creator.extend_ontology()
+            st.write(f'Found {number_of_articles} articles with your search parametrs')
             convert_owl_to_csv(ontology_name)
             finished = True
             st.write('Finished extending ontology, you can download the result')

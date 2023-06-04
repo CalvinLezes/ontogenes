@@ -201,7 +201,7 @@ class OntologyCreator:
 
         #search aricles
         article_searcher = ArticleSearcher(disorder_search_term, self.count, age_filter, gender_filter, self.nationality, year_filter)
-        articles = article_searcher.search_articles()
+        articles, number_of_articles = article_searcher.search_articles()
 
         if len(articles) == 0:
             logging.info('no articles found')
@@ -280,7 +280,7 @@ class OntologyCreator:
 
         #save ontology
         onto.save()
-        return
+        return number_of_articles
 
     def extend_ontology(self):
         #open ontology
@@ -360,7 +360,7 @@ class OntologyCreator:
 
         #search aricles
         article_searcher = ArticleSearcher(disorder_search_term, self.count, age_filter, gender_filter, self.nationality, year_filter)
-        articles = article_searcher.search_articles()
+        articles, number_of_articles = article_searcher.search_articles()
 
         if len(articles) == 0:
             logging.info('no articles found')
@@ -434,4 +434,4 @@ class OntologyCreator:
 
         #save ontology
         onto.save()
-        return
+        return number_of_articles

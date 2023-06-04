@@ -77,20 +77,22 @@ class ArticleSearcher:
         search_link = self.make_search_link() 
         response = self.make_request(search_link) #make search request
         count = response.find("Count").text
-        number_of_articles = int(count) #total number of articles found
+        articles_count = int(count) #total number of articles found
         webenv = response.find("WebEnv").text
         querykey = response.find("QueryKey").text #parameters for fetch search
 
         articles = []
 
-        logging.info(f"Total number of articles found is {number_of_articles}")
-        if number_of_articles == 0: #if didn't find any articles return empty array
+
+
+        logging.info(f"Total number of articles found is {articles_count}")
+        if articles_count == 0: #if didn't find any articles return empty array
             return articles
 
         retstart = 0 #start index of articles
 
         if self.number_of_articles is not None:
-            number_of_articles = min(number_of_articles, self.number_of_articles) #number of articles to fetch
+            number_of_articles = min(articles_count, self.number_of_articles) #number of articles to fetch
         
         retmax = min(500, number_of_articles) #max number of articles returned in one request
         
@@ -100,4 +102,4 @@ class ArticleSearcher:
             fetch_link = self.make_fetch_link(webenv, querykey, retstart, retmax)
             response = self.make_request(fetch_link)
             articles = self.get_article_info(response, articles)
-        return articles   
+        return articles, articles_count   
