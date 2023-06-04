@@ -201,11 +201,13 @@ class OntologyCreator:
 
         #search aricles
         article_searcher = ArticleSearcher(disorder_search_term, self.count, age_filter, gender_filter, self.nationality, year_filter)
-        articles, number_of_articles = article_searcher.search_articles()
+        articles, total_number_of_articles = article_searcher.search_articles()
 
-        if len(articles) == 0:
+        number_of_articles = len(articles)
+
+        if number_of_articles == 0:
             logging.info('no articles found')
-            return
+            return total_number_of_articles, number_of_articles
         
         #add genes in ontology
         genes_onto = []
@@ -280,7 +282,7 @@ class OntologyCreator:
 
         #save ontology
         onto.save()
-        return number_of_articles
+        return total_number_of_articles, number_of_articles
 
     def extend_ontology(self):
         #open ontology
@@ -360,11 +362,13 @@ class OntologyCreator:
 
         #search aricles
         article_searcher = ArticleSearcher(disorder_search_term, self.count, age_filter, gender_filter, self.nationality, year_filter)
-        articles, number_of_articles = article_searcher.search_articles()
+        articles, total_number_of_articles = article_searcher.search_articles()
 
-        if len(articles) == 0:
+        number_of_articles = len(articles)
+
+        if number_of_articles == 0:
             logging.info('no articles found')
-            return
+            return total_number_of_articles, number_of_articles
         
         genes_onto = onto.search(type = Gene)
 
@@ -434,4 +438,4 @@ class OntologyCreator:
 
         #save ontology
         onto.save()
-        return number_of_articles
+        return total_number_of_articles, number_of_articles
